@@ -1,4 +1,4 @@
-const ws = new WebSocket("WSS_URL_HERE");
+const ws = new WebSocket("wss://chat-backend.mr-migle2-0.workers.dev");
 
 ws.onmessage = e => {
   const li = document.createElement("li");
@@ -12,3 +12,4 @@ function send() {
   ws.send(input.value);
   input.value = "";
 }
+
